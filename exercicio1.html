@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro exercicio</title>
+</head>
+<body>
+
+    <input type="text" id="Data_de_Nacimento">
+
+    <button onclick="calcula()">Click nim min </button>
+
+    <script> 
+      function calcula(){
+        var ano_atual = 2025;
+        var ano_nascimento = document.getElementById("Data_de_Nacimento").value;
+        var resultado = ano_atual - ano_nascimento;
+        alert(resultado);
+      }
+    </script>
+
+</body>
