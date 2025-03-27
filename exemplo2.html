@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segundo exercicio</title>
+</head>
+<body>
+
+    <input type="text" id="Divisao">
+
+    <button onclick="divide()">Click nim min </button>
+
+    <script>
+        function divide(){
+            var fatias_de_bolo = 6;
+            var fatias_comidas = document.getElementById("Divisao").value
+            var resultado = fatias_de_bolo / fatias_comidas;
+            alert(resultado);
+        }
+    </script>
+</body>

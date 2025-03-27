@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quinto exercicio</title>
+    </head>
+    <body>
+    <!-- Esse codigo abaixo cria uma caixa na tela para o usuario digitar um valor -->
+    <!-- O atributo 'id' server para identificar esse campo dos demais no javascript --> 
+    <input type="text" id="hellou">
+
+    <button onclick="boas_vindas()"> Click nim min </button>
+    
+        <script>
+            function boas_vindas(){
+                var nome = document.getElementById("hellou").value;
+                var exibeTexto = "Olá "+nome+", prazer em te conhecer!";
+                alert(exibeTexto);
+            }
+        </script>
+    </body>
+</html>
+
