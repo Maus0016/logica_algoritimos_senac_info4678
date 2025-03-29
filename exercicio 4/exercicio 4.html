@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quarto exercicio</title>
+</head>
+<body>
+    <input type="text" id="soma">
+    <input type="text" id="total">
+        <button onclick="somatorio()"> Click nim min </button>
+        <script>
+
+        function somatorio(){
+            //parseInt para nunero inteiro
+            //parseFloat para n com casas decimais
+            //number() para converter para numero
+            var numero_b = parseInt(document.getElementById("soma").value);
+            var numero_d = parseInt(document.getElementById("total").value);
+            var numero_e = numero_b + numero_d;
+            alert(numero_e);
+        }
+        </script>
+    
+</body>
+</html>

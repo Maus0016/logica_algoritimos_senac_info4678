@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quinto exercicio</title>
+</head>
+<body>
+    <input type="text" id="a">
+    <input type="text" id="b">
+
+    <button onclick="notas()"> Click nim mim</button>
+    <script>
+        function notas(){
+            var nota_a = parseFloat(document.getElementById("a").value);
+            var nota_b = parseFloat(document.getElementById("b").value);
+            var result = nota_a + nota_b;
+            var nota = nota_a + nota_b /2;
+            var media = "A media entre a "+nota_a+" e a "+nota_b+" vai ser "+nota_a + nota_b/2+"";
+            alert(media)
+        }
+    </script>
+
+</body>
+</html>
