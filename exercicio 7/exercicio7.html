@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setimo exercicio</title>
+</head>
+<input type="text" id="jota">
+
+<button onclick="talvez()"> Click nim min </button>
+<script>
+    function talvez(){
+        var numeror = parseFloat(document.getElementById("jota").value);
+        var dobro = numeror * 2;
+        var terca_parte = numeror /3;
+        var tudo = "O dobro de " +numeror+ " é "+dobro+" e a terça parte é" +terca_parte;
+        alert(tudo);
+    }
+</script>
+</body>
+</html>

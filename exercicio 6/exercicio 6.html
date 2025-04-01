@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quinto exercicio</title>
+    <title>Sexto exercicio</title>
 </head>
 <body>
     <input type="text" id="w">
@@ -11,9 +11,11 @@
     <button onclick="tudo()"> Click nim min</button>
     <script>
         function tudo(){
-           var numero = ParseInt(document.getElementById("w").value);
-           var total = "O antecessor de 20 é "+1-total+" é e o sucessor é "+-1+20+""
-           alert(total)
+           var valorDigitado = parseInt(document.getElementById("w").value);
+           var antecessor = valorDigitado - 1;
+           var sucessor = valorDigitado + 1;
+           var total = "O antecessor de " + valorDigitado + " é "+antecessor+" é o sucessor é "+sucessor;
+           alert(total);
         }
     </script>
     </body>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oitavo exercicio</title>
+</head>
+<input type="text" id="perolas">
+
+<button onclick="alfabeto()"> Click nim min</button>
+<script>
+    function alfabeto(){
+        var metros = parseFloat(document.getElementById("perolas").value);
+        var km = metros * 0.001;
+        var hm = metros * 0.01;
+        var dam = metros * 0.1;
+        var dm = metros * 10;
+        var cm = metros * 100;
+        var mm = metros * 1.000;
+        var tudo_junto = "A distancia de "+metros+" corresponde a "+km+"km, "+hm+" Hm, "+dam+" Dam,"+dm+" Dm, "+cm+" Cm e a "+mm;
+        alert(tudo_junto);
+
+    }
+</script>
+</bory>
+</html>
