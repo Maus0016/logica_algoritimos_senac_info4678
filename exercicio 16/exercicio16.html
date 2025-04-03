@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decimo sexto</title>
+</head>
+<input type="text" id="aaa">
+<input type="text" id="bbb">
+
+<button onclick="eu()"> Click nim min</button>
+
+<script>
+    function eu(){
+        var cigarro_dia = parseFloat(document.getElementById("aaa").value);
+        var anos = parseFloat(document.getElementById("bbb").value);
+        var cigarro_diat = cigarro_dia - 10 * 60;
+        var anost = cigarro_dia - 10 * 60 * 365;
+        var total = "Um fumante fuma "+cigarro_dia+" cigarros por dia, e fuma por "+anos+" anos então ele perdeu um total de "+anost+" dias de vida."
+        alert(total);
+
+    }
+</script>
+</body>
+</html>
