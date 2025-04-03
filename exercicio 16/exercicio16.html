@@ -14,8 +14,8 @@
     function eu(){
         var cigarro_dia = parseFloat(document.getElementById("aaa").value);
         var anos = parseFloat(document.getElementById("bbb").value);
-        var anost = cigarro_dia / 10 * 365;
-        var total = "Um fumante fuma "+cigarro_dia+" cigarros por dia, e fuma por "+anos+" anos então ele perdeu um total de "+anost+" dias de vida."
+        var anost = cigarro_dia / 10 * 24 * anos
+        var total = "Um fumante fuma "+cigarro_dia+" cigarros por dia, e fuma por "+anos+" anos então ele perdeu um total de "+anost.toFixed(2)+" dias de vida."
         alert(total);
 
     }
