@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decimo exercicio</title>
+</head>
+<input type="text" id="didi">
+<button onclick="dudu()"> Click nim min</button>
+<script>
+    function dudu(){
+        var preco = parseFloat(document.getElementById("didi").value);
+        var produto = preco - preco * 0.05;
+        var desconto = preco * 95 / 100;
+        var total = "Comprei um celular na loja, o celular custava R$ "+preco+" ,mas, paguei a vista e ganhei um desconto de 5% por isso, então paguei "+desconto;
+        alert(total);
+    }
+</script>
+</bory>
+</html>

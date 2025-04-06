@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decimo Primeiro exercicio</title>
+</head>
+<input type="text" id="what">b 
+<input type="text" id="true">a
+<input type="text" id="hir">c
+<button onclick="fa()"> Click nim min </button>
+<script>
+    //b² - 4 .a .c
+    //(b*b)
+    //Beegroud Console.log
+    function fa(){
+        var A = parseFloat(document.getElementById("what").value);
+        var B = parseFloat(document.getElementById("true").value);
+        var C = parseFloat(document.getElementById("hir").value);
+        var calculo = (A * A) - 4 * B * C;
+        alert(calculo + "🔺");
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decimo exercicio</title>
+</head>
+<input type="text" id="survive">
+<button onclick="fritas()"> Click nim min </button> 
+<script>
+    function fritas(){
+        var a = parseFloat(document.getElementById("survive").value);
+        var altura = a * 5;
+        var largura = a * 4.5;
+        var base = (altura * largura) / 2;
+        var total = "Para pintar uma parede de "+a+" m com uma altura de "+altura+" e uma largura de "+largura+" sera presiso de "+base+" l de tinta";
+    
+        alert (total);
+
+    }
+</script>
+</bory>
+</html>
