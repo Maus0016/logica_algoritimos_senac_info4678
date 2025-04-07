@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decimo setimo</title>
+</head>
+<input type="text" id="aaa" value="">
+<button onclick="dudu()"> Click nim Min</button>
+    
+<script>
+    //!=diferente
+    //== igual a
+    //<= menor igual
+    //>= maior igual
+    //< menor a 
+    //> maior a
+    // if (estrutura de descisão para testar se é verdadeiro ou falso)
+    // else é usado quando if não é verdadeiro
+function dudu(){
+    var velocidadeDoCarro = Number(document.getElementById("aaa").value);
+
+    if(velocidadeDoCarro > 80){
+        var velociadeAcimaDoPermitido = velocidadeDoCarro - 80;
+        var valorDaMulta = velociadeAcimaDoPermitido * 5;
+        alert("Você foi multado. Valor à pagar: R$"+valorDaMulta);
+    }else{
+        alert("Parabéns, você está dentro do limite de velocidade permitido!");
+    }
+
+}
+</script>
+</body>
+</html>
+
+        
