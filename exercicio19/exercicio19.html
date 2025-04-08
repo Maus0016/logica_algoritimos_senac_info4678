@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decimo setimo</title>
+</head>
+<input type="text" id="a" value="">
+<input type="text" id="b" value="">
+<input type="text" id="c" value="">
+
+<button onclick="euz()" > Click nim min</button>
+
+<script>
+    function euz(){
+        var nomeAluno = document.getElementById("a").value;
+        var nota_a = Number(document.getElementById("b").value);
+        var nota_b = Number(document.getElementById("c").value);
+        var media = (nota_a + nota_b) / 2;
+        if(media < 7.0){
+            alert ("Infelizmente sua nota foi " +media+ ",valor abaixo da média!");
+        }else{
+        alert("Parabéns, sua nota foi " +media+ ",acima da média!");
+        }
+
+        }
+    
+</script>
+</body>
+</html>

@@ -6,4 +6,19 @@
     <title>Decimo Oitavo</title>
 </head>
 <input type="text" id="eu" value="">
-<button 
+<button onclick="suave()"> Click nim min</button>
+
+<script>
+    function suave(){
+        var anoNascimento = Number(document.getElementById("eu").value);
+        var idade = 2025 - anoNascimento  ;
+        if(idade > 18 ){
+            alert("Você tem " +idade+ " anos, idade suficiente para votar!");
+        }else{
+            alert("Você tem " +idade+ " anos, não pode votar!");
+        }
+        }
+
+</script>
+</body>
+</html>
