@@ -17,10 +17,10 @@
         var valor_gasto = Number(document.getElementById("valor").value);
         var homen = valor_gasto - 95 / 100;
         var mulher = valor_gasto - 87 / 100;
-        if(sexo == mulher){
-            alert(+nome+ " você recebeu 13% de desconto pelo dia da mulher, sua compra deu" +mulher);
+        if(sexo == "mulher"){
+            alert(nome+ " você recebeu 13% de desconto pelo dia da mulher, sua compra deu" +mulher);
         }else{
-            alert(+nome+ " você recebeu 5% de desconto pelo dia da mulher, sua compra deu" +homen);
+            alert(nome+ " você recebeu 5% de desconto pelo dia da mulher, sua compra deu" +homen);
         }
         
     }

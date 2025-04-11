@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vigesimo Quarto</title>
+</head>
+Quantos KM deseja percorrer?<input type="text" id="distancia" value="">
+<button onclick="clica()"> Clique aqui</button>
+
+<script>
+    function clica(){
+        var km = Number(document.getElementById("distancia").value);
+        var kmt = km * 0.50;
+        if(kmt <= 200){
+            alert(kmt)
+        }
+    }
+</script>
+</body>
+</html>
