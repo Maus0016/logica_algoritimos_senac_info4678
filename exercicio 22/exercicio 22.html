@@ -6,20 +6,22 @@
     <title>Vigegimo segundo</title>
 </head>
 <input type="text" id="eus" value="">
-<input type="text" id="euz" value="">
 <button onclick="eu()"> Clique aqui</button>
 
 <script>
     function eu(){
         var anoNascimento = Number(document.getElementById("eus").value);
-        var alistamento = Number(document.getElementById("euz").value);
-        var menos18 = alistamento - anoNascimento;
-        if (menos18 < 18){
-            alert()
+        var idade = 2025 - anoNascimento;
+        if (idade < 18){
+            var aindaFalta = 18 - idade;
+            alert("Você tem " +idade+ " anos não pode se alistar.");
+        }else{
+            alert("Você ja passou do poriodo de alistamento por ter " +idade+ " anos.");
         }
 
 
     }
+
 </script>
 </bory>
 </html>
