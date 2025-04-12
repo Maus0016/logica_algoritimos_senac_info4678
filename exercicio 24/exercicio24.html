@@ -13,7 +13,11 @@ Quantos KM deseja percorrer?<input type="text" id="distancia" value="">
         var km = Number(document.getElementById("distancia").value);
         var kmt = km * 0.50;
         if(kmt <= 200){
-            alert(kmt)
+            
+            alert("Para viagens de até 200km será cobrado 0.50c. Total R$" +kmt);
+        }else{
+            var kml = km * 0.45;
+            alert("Para viagens acima de 200km será cobrado 0.45c. Total R$" +kml);
         }
     }
 </script>
