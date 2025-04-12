@@ -13,13 +13,23 @@
     function huh(){
         var ano = Number(document.getElementById("jjj").value);
         var a = ano % 4;
-       if(a === 0){
-alert(+ano+ "  é bissesto")
-}else{
-           alert(+ano+ " não é bissesto")
+        var b = ano % 100;
+        var c = ano % 400;
+          if( a == 0){
+            var a = ano % 400;
+            if( b != 0){
+                var b = ano % 100;
+                alert(ano+ " é bissexto")
 
-       }
-    }
+            }else{
+                alert(ano+ " não é bissexto")
+            }
+
+          }else{
+            alert(ano+ " não é bissexto")
+          }
+        }
+          
    
 
     
