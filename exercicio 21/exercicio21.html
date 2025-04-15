@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vigegimo primeiro</title>
 </head>
-<input type="number" id="jjj" value=""> 
+Digite o ano para saber se ele bissexto ou não <input type="number" id="jjj" value=""> 
 <button onclick="huh()" > Click nim min</button>
 
 <script>
@@ -16,22 +16,25 @@
         var b = ano % 100;
         var c = ano % 400;
           if( a == 0){
-            var a = ano % 400;
-            if( b != 0){
-                var b = ano % 100;
-                alert(ano+ " é bissexto")
-
+            //var a = ano % 4;
+            if( b == 0){
+                //var b = ano % 100;
+              if( c == 0){
+                //var c = ano % 400;
+                alert(ano+ " é bissexto.")
+              }else{
+                alert(ano+ " é bissexto.")
+              }
+              
             }else{
-                alert(ano+ " não é bissexto")
+              alert(ano+ " é bissexto.")
             }
-
           }else{
-            alert(ano+ " não é bissexto")
+            alert(ano+ " não é bissexto."  )
           }
         }
-          
-   
-
+      
+      
     
     //Caso1 - é divisivel por 4, é divisivel por 100 e é divisivel por 400
     //Casi2 - é divisivel por 4 e não é divisivel por 100;
