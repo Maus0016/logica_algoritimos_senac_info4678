@@ -15,15 +15,8 @@
         var a = Number(document.getElementById("a").value);
         var b = Number(document.getElementById("b").value);
         var c = Number(document.getElementById("c").value);
-        if(a + b > c){
-            var calculo1 = a + b;
+        if(a + b > c && a + c > b && b + c > a){
             
-            if(a + c > b){
-                var calculo2 = a + c;
-                
-                if(b + c > a){
-                    var calculo3 = b + c;
-                    alert(calculo3+ " é um triangulo")
                 }else{
                     alert("Não é triangulo")
                 }
