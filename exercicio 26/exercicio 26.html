@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vigegimo sexto</title>
 </head>
-<input type="text" id="a" value="">
+<input type="text" id="numero1" value="">
+<input type="text" id="numero2" value="">
 <button onclick="eu()"> Clique aqui</button>
 
 <script>
@@ -22,4 +23,22 @@
     // false - 0
     // || OR OU 
     // && AND E 
+    function eu(){
+        var numeroUm = Number(document.getElementById("numero1").value);
+        var numeroDois = Number(document.getElementById("numero2").value);
+        if(numeroUm > numeroDois){
+            alert(numeroUm+ " é maior que " +numeroDois);
+        }
+        if(numeroUm < numeroDois){
+            alert(numeroUm+ " é menor que " +numeroDois)
+        }
+        if(numeroUm == numeroDois){
+            alert(numeroUm+ " é igual a " +numeroDois)
+
+        }
+        }
+
+    
 </script>
+</body>
+</html>

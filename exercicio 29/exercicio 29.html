@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vigegimo sexto</title>
+</head>
+<input type="text" id="funcionario" value="">
+<input type="text" id="salario" value="">
+<input type="text" id="anos" value="">
+<button onclick="eu()"> Clique aqui</button>
+
+<script>
+    function eu(){
+        var nome = document.getElementById("funcionario").value;
+        var salario = Number(document.getElementById("salario").value);
+        var anos = Number(document.getElementById("anos").value); 
+       
+        
+        if(anos <= 3 ){
+            var TresAnos = salario + (salario * 0.3) ; 
+            alert(nome+ " tem " +anos+ " anos e por isso seu novo salario é " +TresAnos);
+        }
+        if(anos > 3 && anos <= 10){
+            var AteDezAnos = salario + (salario * 0.125) ;
+            alert(nome+ " tem " +anos+ " anos e por isso seu novo salario é " +AteDezAnos); 
+        }
+        if(anos >= 10){
+            var DezMais = salario + (salario * 0.20) ;
+            alert(nome+ "tem " +anos+ " anos e por isso seu novo salario é " +DezMais);
+
+        }
+        }
+    
+</script>

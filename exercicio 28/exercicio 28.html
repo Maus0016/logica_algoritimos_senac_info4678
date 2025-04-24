@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vigegimo sexto</title>
+</head>
+<input type="text" id="largura" value="">
+<input type="text" id="comprimento" value="">
+<button onclick="eu()"> Clique aqui</button>
+
+<script>
+    function eu(){
+        var largura = Number(document.getElementById("largura").value);
+        var comprimento = Number(document.getElementById("comprimento").value);
+        var calculo = largura * comprimento;
+        //" m²"
+        if(calculo <= 100 ){
+            alert("Terreno Popular");
+        }
+        if(calculo > 100 && calculo <= 499){
+            alert("Terreno master") 
+        }
+        if(calculo >= 500){
+            alert("Terreno Vip")
+
+        }
+        }
+
+    
+</script>

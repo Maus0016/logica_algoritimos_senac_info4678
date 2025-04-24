@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vigegimo sexto</title>
+</head>
+<input type="text" id="nota1" value="">
+<input type="text" id="nota2" value="">
+<button onclick="eu()"> Clique aqui</button>
+
+<script>
+    function eu(){
+        var notaUm = Number(document.getElementById("nota1").value);
+        var notaDois = Number(document.getElementById("nota2").value);
+        var calculo = notaUm + notaDois / 2;
+        if(calculo <= 4.9){
+            alert(" Reprovado")
+}
+if(calculo >= 5.0 && calculo <= 6.9){
+    alert("Recuperação")
+}
+if(calculo > 7.0){
+    alert("Aprovado")
+
+}
+}
+
+ </script>
+ </body>  
+</html> 
