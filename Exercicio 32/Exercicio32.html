@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vigegimo sexto</title>
+</head>
+<input type="text" id="sorteio" value="">
+<button onclick="eu()"> Clique aqui</button>
+
+
+<script>
+    function eu(){
+        // Math.floor(Math.random() gera um valor aleatorio entre 0 e 1, nunca em 0 e nunca em 1 e então multiplicado pelo valor dejesado adiciando 1 
+        // exemplo numero até 55 Math.floor(Math.random() * 56)  
+        var sorteio = Number(document.getElementById("sorteio").value);
+        var valorAleatorio = Math.floor(Math.random() * 5)+1;
+        if(sorteio == valorAleatorio){
+            alert("Acertou, o numero é " +valorAleatorio)
+        }else{
+        alert("Errou, o numero é " +valorAleatorio)
+        }
+    }
+</script>

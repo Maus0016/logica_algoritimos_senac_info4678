@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vigesimo Quinto</title>
+</head>
+<br>Valor da Casa<br><input type="text" id="ValorCasa" value="">
+<br>Salario<br><input type="text" id="Salario" value="">
+<br>Anos<br><input type="text" id="Anos" value="">
+<button onclick="Eu()"> Clique aqui</button>
+
+<script>
+    function Eu(){
+        var ValorCasa = Number(document.getElementById("ValorCasa").value);
+        var Salario = Number(document.getElementById("Salario").value);
+        var Anos = Number(document.getElementById("Anos").value);
+        var Parcelas = ValorCasa / (Anos * 12);
+        var ParcelasMes = Salario - 0.30;
+        
+
+
+        if(ParcelasMes <= 0.30){
+            alert("Aprovado")
+
+        }else{
+            alert("Recusado")
+        }
+    }
+</script>
+</body>
+</html>
+

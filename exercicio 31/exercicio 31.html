@@ -5,12 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vigegimo sexto</title>
 </head>
-<input type="text" id="a" value="">
-<input type="text" id="b" value="">
+<input type="text" id="p1" value="">
+<input type="text" id="p2" value="">
 <button onclick="eu()"> Clique aqui</button>
 
 <script>
     function eu(){
+        var Jogador1 = document.getElementById("p1").value;
+        var Jogador2 = document.getElementById("p2").value;
+        if(Jogador1 === Jogador2){
+            alert("Empate")
+        }else if((Jogador1 === "Pedra" && Jogador2 === "Tesoura") || (Jogador1 === "Papel" && Jogador2 === "Pedra") || (Jogador1 === "Tesoura" && Jogador2 === "Papel")){
+            alert("Jogador1 venceu, " +Jogador1+ " ganhou de " +Jogador2)
+        }else{
+            alert("Jogador2 venceu, " +Jogador2+ " ganhou de " +Jogador1)
+        }
+            
+        }
+        
     
-    }
 </script>
+</body>
+</html>

@@ -15,19 +15,24 @@
         var a = Number(document.getElementById("a").value);
         var b = Number(document.getElementById("b").value);
         var c = Number(document.getElementById("c").value);
-        if(a + b > c && a + c > b && b + c > a){
-            
-                }else{
-                    alert("Não é triangulo")
-                }
-            }else{
-                alert("não é triangulo")
+        if(a + b >= c && a + c >= b && b + c >= a)
+        {
+            if(a == b && a == c )
+            {
+                alert("EQUILÁTERO")
             }
+            else if((a == b && a != c) || ( a == c && c != b ) || (b == c && c != a))
+            {
+                alert("ISÓSCELES")
+            }else if(a != b && a != c )
+            {
+                alert("ESCALENO")      
+            }
+            
         }else{
             alert("Não é triangulo")
         }
     }
-                
     
 </script>
 </body>
