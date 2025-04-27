@@ -16,15 +16,13 @@
         var Salario = Number(document.getElementById("Salario").value);
         var Anos = Number(document.getElementById("Anos").value);
         var Parcelas = ValorCasa / (Anos * 12);
-        var ParcelasMes = Salario - 0.30;
         
-
-
-        if(ParcelasMes <= 0.30){
-            alert("Aprovado")
+    
+        if(Parcelas > Salario * 0.3){
+            alert("Infelizmente não foi possivel realizar o emprestimo")
 
         }else{
-            alert("Recusado")
+            alert("O emprestimo foi aprovado, no valor de R$ " +Parcelas)
         }
     }
 </script>
