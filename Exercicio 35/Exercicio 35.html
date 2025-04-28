@@ -20,19 +20,19 @@
         var KmAteDuzentosLuxo = KmPercorridos * 0.30 + DiasDeAluguel * 150;
         var KmAcimaDuzentosLuxo = KmPercorridos * 0.25 + DiasDeAluguel * 150;
 
-    if(TipoCarro == "Popular" == KmAteCem <= 100)
+    if(TipoCarro == "Popular" && KmAteCem <= 100)
     {
         alert("Até 100Km para carros populares será cobrado R$ 0.20c por Km rodado e R$ 90 por diaria, total R$ " +KmAteCem)
     }
-    else if(TipoCarro == "Popular" == KmAcimaDeCem >= 101)
+    else if(TipoCarro == "Popular" && KmAcimaDeCem >= 101)
     {
         alert("Acima de 100Km será cobrado R$ 0.10c por Km rodado e R$ 90 por diaria, total R$ " +KmAcimaDeCem)
     }
-    else if(TipoCarro == "Luxo" == KmAteDuzentosLuxo <= 200)
+    else if(TipoCarro == "Luxo" && KmAteDuzentosLuxo <= 200)
     {
         alert("Até 200Km será cobrado R$ 0.30c por Km rodado e R$ 150 por diaria, total R$ " +KmAteDuzentosLuxo)
     }
-    else if(TipoCarro == "Luxo" ==KmAcimaDuzentosLuxo >= 201)
+    else if(TipoCarro == "Luxo" && KmAcimaDuzentosLuxo >= 201)
     {
         alert("Até 200Km será cobrado R$ 0.30c por Km rodado e R$ 150 por diaria, total R$ " +KmAcimaDuzentosLuxo)
     }
