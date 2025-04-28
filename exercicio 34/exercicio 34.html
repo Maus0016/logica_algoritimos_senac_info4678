@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trigésimo quarto</title>
+</head>
+<br>Peso<br><input type="text" id="Peso" value="">
+<br>Altura<br><input type="text" id="Altura" value="">
+<button onclick="Aperta()"> Clique aqui</button>
+
+<script>
+    function Aperta(){
+        var Peso = Number(document.getElementById("Peso").value);
+        var Altura = Number(document.getElementById("Altura").value);
+        var IMC = Peso / (Altura * Altura);
+
+        if(IMC < 18.5)
+        {
+            alert("Magreza, IMC " +IMC)
+        }
+        else if(IMC >= 18.5 && IMC <= 25)
+        {
+            alert("Peso ideal, IMC " +IMC)
+        }
+        else if(IMC >= 25 && IMC <= 30)
+        {
+            alert("Sobrepeso, IMC " +IMC)
+        }
+        else if(IMC >= 30 && IMC <= 40)
+        {
+            alert("Obesidade, IMC " +IMC)
+        }
+        else if(IMC > 40)
+        {
+            alert("Obesidade morbita, IMC " +IMC)
+        }
+    }
+</script>
+</body>
+</html>
