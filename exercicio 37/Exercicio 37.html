@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trigésimo terceiro</title>
+</head>
+<br>Salario Atual<br><input type="number" id="SalarioAtual" value="">
+<br>Genero<br><input type="text" id="Genero" value="">
+<br>Anos de Empresa<br><input type="number" id="AnosDeEmpresa" value="">
+<button onclick="Eu()"> Clique aqui</button>
+
+<script>
+    function Eu(){
+        var SalarioAtual = Number(document.getElementById("SalarioAtual").value);
+        var Genero = document.getElementById("Genero").value;
+        var AnosDeEmpresa = Number(document.getElementById("AnosDeEmpresa").value);
+        var MulherMenosDeQuinze = SalarioAtual * 0.05 + SalarioAtual;
+        var MulherDeQuinzeAVinte = SalarioAtual * 0.12 + SalarioAtual;
+        var MulherMaisDeVinte = SalarioAtual * 0.23 + SalarioAtual;
+        var HomenMenosDeVinte = SalarioAtual * 0.03 + SalarioAtual;
+        var HomenDeVinteATrinta = SalarioAtual * 0.13 + SalarioAtual;
+        var HomenMaisDeTrinta = SalarioAtual * 0.25 + SalarioAtual;
+
+        if(Genero == "Mulher")
+        {
+            if(AnosDeEmpresa <= 15)
+            {
+                alert("Mulheres com menos de 15 anos de empresa rebecem R$ " +SalarioAtual+ " e um aumento de 3% no salario, totalizando R$ " +MulherMenosDeQuinze)               
+            }
+            else if(AnosDeEmpresa >= 15 && AnosDeEmpresa <= 20)
+            {
+                alert("Mulheres de 15 à 20 anos de empresa rebecem R$ " +SalarioAtual+ " e um aumento de 12% no salario, totalizando R$ " +MulherDeQuinzeAVinte)
+            }
+            else if(AnosDeEmpresa > 20)
+            {
+                alert("Mulheres com mais de 20 anos de empresa rebecem R$ " +SalarioAtual+ " e um aumento de 23% no salario, totalizando R$ " +MulherMaisDeVinte)
+            }
+        }
+        else if(Genero == "Homen")
+        {
+            if(AnosDeEmpresa <= 20)
+            {
+                alert("Homens com menos de 20 anos de empresa recebem R$ " +SalarioAtual+ " e um aumento de 3% no salario, totalizando R$ " +HomenMenosDeVinte)
+            }
+            else if(AnosDeEmpresa >= 20 && AnosDeEmpresa <= 30)
+            {
+                alert("Homens de 20 à 30 anos de empresa recebem R$ " +SalarioAtual+ " e um aumento de 13% no salario, totalizando R$ " +HomenDeVinteATrinta)
+            }
+            else if(AnosDeEmpresa > 30)
+            {
+                alert("Homens com mais de 30 anos de empresa recebem R$ " +SalarioAtual+ " e um aumento de 25% no salario, totalizando R$ " +HomenMaisDeTrinta)
+            }
+        }
+}
+    
+</script>
+</body>
+</html>
