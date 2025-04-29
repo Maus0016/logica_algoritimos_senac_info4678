@@ -15,21 +15,22 @@
         var SalarioAtual = Number(document.getElementById("SalarioAtual").value);
         var Genero = document.getElementById("Genero").value;
         var AnosDeEmpresa = Number(document.getElementById("AnosDeEmpresa").value);
-        var MulherMenosDeQuinze = SalarioAtual * 0.05 + SalarioAtual;
-        var MulherDeQuinzeAVinte = SalarioAtual * 0.12 + SalarioAtual;
+        
         var MulherMaisDeVinte = SalarioAtual * 0.23 + SalarioAtual;
         var HomenMenosDeVinte = SalarioAtual * 0.03 + SalarioAtual;
         var HomenDeVinteATrinta = SalarioAtual * 0.13 + SalarioAtual;
         var HomenMaisDeTrinta = SalarioAtual * 0.25 + SalarioAtual;
-
+// indiferente se a Variavel estiver acima dos "if" ou dentro deles, mas, por questão de performace é melhor dentro do if.
         if(Genero == "Mulher")
         {
             if(AnosDeEmpresa <= 15)
             {
+                var MulherMenosDeQuinze = SalarioAtual * 0.05 + SalarioAtual;
                 alert("Mulheres com menos de 15 anos de empresa rebecem R$ " +SalarioAtual+ " e um aumento de 3% no salario, totalizando R$ " +MulherMenosDeQuinze)               
             }
             else if(AnosDeEmpresa >= 15 && AnosDeEmpresa <= 20)
             {
+                var MulherDeQuinzeAVinte = SalarioAtual * 0.12 + SalarioAtual;
                 alert("Mulheres de 15 à 20 anos de empresa rebecem R$ " +SalarioAtual+ " e um aumento de 12% no salario, totalizando R$ " +MulherDeQuinzeAVinte)
             }
             else if(AnosDeEmpresa > 20)
@@ -51,6 +52,8 @@
             {
                 alert("Homens com mais de 30 anos de empresa recebem R$ " +SalarioAtual+ " e um aumento de 25% no salario, totalizando R$ " +HomenMaisDeTrinta)
             }
+        }else{
+            alert("Digite Homen ou Mulher no campo genero");
         }
 }
     
