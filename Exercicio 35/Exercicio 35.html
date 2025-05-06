@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trigésimo quarto</title>
+    <title>Trigésimo Quinto</title>
 </head>
 <br>Carro Popular ou Carro de Luxo?<br><input type="text" id="Carro" value="">
 <br>Quantos dias pretende alugar o carrro?<br><input type="number" id="DiasDeAluguel" value="">
@@ -38,6 +38,30 @@
     }
 }
      
+        if(TipoCarro == "Popular" )
+        {
+            if(KmAteCem <= 100){
+                alert("Até 100Km para carros populares será cobrado R$ 0.20c por Km rodado e R$ 90 por diaria, total R$ " +KmAteCem)
+            }
+            else if(KmAcimaDeCem >= 101)
+            {
+                alert("Acima de 100Km será cobrado R$ 0.10c por Km rodado e R$ 90 por diaria, total R$ " +KmAcimaDeCem)
+            }
+        }
+        else if(TipoCarro == "Luxo")
+        {
+            if(KmAteDuzentosLuxo <= 200)
+            {
+                alert("Até 200Km será cobrado R$ 0.30c por Km rodado e R$ 150 por diaria, total R$ " +KmAteDuzentosLuxo)
+            }
+            else if(KmAcimaDuzentosLuxo >= 201)
+            {
+                alert("Até 200Km será cobrado R$ 0.30c por Km rodado e R$ 150 por diaria, total R$ " +KmAcimaDuzentosLuxo)
+            }
+        }else{
+            alert("Escreva Popular ou Luxo")
+        }
+    
 </script>
 </body>
 </html>

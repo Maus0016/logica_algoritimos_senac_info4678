@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trigésimo Sexto</title>
+</head>
+<br>Horas de Atividades<br><input type="number" id="Horas" value="">
+<button onclick="Aperta()"> Clique aqui</button>
+
+<script>
+    function Aperta(){
+        var HorasDeAtividades = Number(document.getElementById("Horas").value);
+        var AtéDezHoras = HorasDeAtividades * 2;
+        var AtéDezHorasDinheiro = AtéDezHoras * 0.05;
+        var DeDezAVinteHoras = HorasDeAtividades * 5;
+        var DeDezAVinteHorasDinheiro = DeDezAVinteHoras * 0.05;
+        var AcimaDeVinteHoras = HorasDeAtividades * 10;
+        var AcimaDeVinteHorasDinheiro = AcimaDeVinteHoras * 0.05;
+        if(HorasDeAtividades < 10  )
+        {
+            alert(HorasDeAtividades+ " horas por mês geram 2 pontos, totalizando " +AtéDezHoras+ " e R$ " +AtéDezHorasDinheiro)
+        }
+        else if(HorasDeAtividades >= 10 && HorasDeAtividades <=20)
+        {
+            alert(HorasDeAtividades+ " horas por mês geram 5 pontos, totalizando " +DeDezAVinteHoras+ " e R$ " +DeDezAVinteHorasDinheiro)
+        }
+        else if(HorasDeAtividades > 20)
+        {
+            alert(HorasDeAtividades+ " horas por mês geram 10 pontos, totalizando " +AcimaDeVinteHoras+ " e R$ " +AcimaDeVinteHorasDinheiro)
+        }  
+    }  
+</script>
+</body>
+</html>
+
