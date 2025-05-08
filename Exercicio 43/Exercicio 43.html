@@ -9,15 +9,26 @@
 
 <script>
  window.onload = function(){
-    // 
-    var apresentacao = prompt("Digite um valor:")
+    
     var total = "";
-    for(var i = 1; i <= apresentacao; i++){
-        total = total + i + " ";
+    for(var i = 30; i > 0; i-- ){
+        if(i % 4 == 0)
+        {
+    
+        total = total+ "[" + i + "]"+ " " ;
         
-    }
-    console.log("Contagem: "+ total+ " Acabou!");
-}
+        }
+        else
+        total = total + i + " " ;
+        
+        }
+        console.log(total );
+    
+ }
+
+
+
+
 </script>
 </body>    
 </html>
