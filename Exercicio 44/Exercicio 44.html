@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trigésimo Oitavo</title>
+</head>
+<button onclick="Eu"> Clique Aqui</button>
+
+<script>
+        window.onload = function(){
+            var NumeroInicial = Number(prompt("Digite primeiro valor"));
+            var NumeroFinal = Number(prompt("Digite o segundo valor"));
+            var NumeroEncremento = Number(prompt("Digite de quantos numeros pular!"))
+            var Total = "";
+            for(var i = NumeroInicial ; i < NumeroFinal;  i+=NumeroEncremento ){
+             Total = Total + i + " ";
+                
+            }
+            console.log(Total+ " Acabou!")
+        }
+    
+</script>
