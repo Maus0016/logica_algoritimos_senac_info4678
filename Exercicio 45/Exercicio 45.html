@@ -12,23 +12,18 @@
             var Numero = Number(prompt("Primeiro Valor"));
             var NumeroMaior = Number(prompt("Ultimo Valor"));
             var Definicao = "";
-            for(var i = Numero; i > NumeroMaior; ){
-                Definicao = Definicao + i + " ";
-                if(Numero > NumeroMaior)
-            {
-                console.log(`${Numero} é maior que ${NumeroMaior}`)       
-                }
-                else if(Numero < NumeroMaior)
-                {
-                console.log(`${Numero} não é maior que ${NumeroMaior}`){ 
-
+            if(NumeroMaior > Numero ){
+            }
+            else if(NumeroMaior < Numero){
                 
-        
+            }
+            for(var i = Numero; i >= NumeroMaior; i--){
+                Definicao = Definicao + i + " ";
+            }
+        console.log(Definicao+ "Acabou!")
         }
-    }
-        }
-    }
     
-    </script>4
+    
+    </script>
     </body>
 </html>
