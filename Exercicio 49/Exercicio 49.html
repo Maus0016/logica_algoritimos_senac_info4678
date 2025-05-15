@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trigésimo Oitavo</title>
+</head>
+<button onclick="Eu"> Clique Aqui</button>
+
+<script>
+        window.onload = function(){
+            var Numeros = " ";
+            var par = 0;
+            var impar = 0;
+            for(var i = 0; i < 6; i++){
+             var Numeros = Number(prompt("Digite seu numero"))
+            if(Numeros % 2 == 0)
+            {
+                par+=1;
+            }
+            else
+            {
+                impar+=1;
+            }
+        }
+            console.log("Temos " +par+ " numeros pares, e " +impar+ " numeros impares." ) 
+        }
+
+    
+    </script>
+    </body>
+</html>

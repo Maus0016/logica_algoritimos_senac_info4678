@@ -12,15 +12,20 @@
             var Numero = Number(prompt("Primeiro Valor"));
             var NumeroMaior = Number(prompt("Ultimo Valor"));
             var Definicao = "";
-            if(NumeroMaior > Numero ){
+            if(NumeroMaior > Numero )
+            {
+                for(var i = Numero; i <= NumeroMaior; i++){
+                    Definicao = Definicao + i + " ";
+                }
             }
-            else if(NumeroMaior < Numero){
-                
+            else{
+                for(var i = Numero; i >= NumeroMaior; i--)
+                {
+                    Definicao = Definicao + i + " ";
+                }
             }
-            for(var i = Numero; i >= NumeroMaior; i--){
-                Definicao = Definicao + i + " ";
-            }
-        console.log(Definicao+ "Acabou!")
+
+            console.log(Definicao+ "Acabou!")
         }
     
     
