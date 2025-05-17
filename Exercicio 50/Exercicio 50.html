@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trigésimo Oitavo</title>
+</head>
+<button onclick="Eu"> Clique Aqui</button>
+
+<script>
+        window.onload = function(){
+            var Sorteavel = 0;
+            var maiorQue5 = 0;
+            var divisivelPor3 = 0;
+            for(var i = 0; i < 20; i++){
+               var Sorteio = Math.trunc(Math.random() * 10);
+               Sorteavel = Sorteavel + " " + Sorteio;
+            
+               if(Sorteio > 5)
+               {
+                maiorQue5+=1;
+               }
+               if(Sorteio % 3 === 0)
+               {
+                divisivelPor3+=1;
+               }
+            }
+            console.log(`Temos ${Sorteio} numeros  , ${maiorQue5} , são maiores que 5 e ${divisivelPor3} são divisiveis por 3`)
+        }
+    </script>
+    </body>
+</html>
