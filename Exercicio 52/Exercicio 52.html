@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trigésimo Oitavo</title>
+</head>
+<button onclick="Eu"> Clique Aqui</button>
+
+<script>
+        window.onload = function(){
+            var Idade = 0;
+            var IdadeMedia = 0;
+            var MaiorQue18 = 0;
+            var MenosDe5 = 0;
+            for(var i = 0; i < 11; i++)
+            {
+                var Media = Idade + IdadeMedia + MaiorQue18 + MenosDe5 / 10;
+                if(Media == Idade)
+                {
+                    Media+=1;
+                }
+                else if(MaiorQue18 > 18)
+                {
+                    MaiorQue18+=1;
+
+                }
+                else if(MenosDe5 < 5)
+                {
+                    MenosDe5+=1;
+                }
+                console.log(`A idade media do grupo é ${IdadeMedia} , delas temos ${MaiorQue18} pessoas maiores de idade e ${MenosDe5} pessoas com menos de cinco anos.` )
+            }
+        }
+    </script>
+    </body>
+</html>
