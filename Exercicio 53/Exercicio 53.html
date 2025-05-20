@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trigésimo Oitavo</title>
+</head>
+<button onclick="Eu"> Clique Aqui</button>
+
+<script>
+        window.onload = function(){
+        
+            var HomensC = 0;
+            var MediaGrupo = 0;
+            var MediaHomens = 0;
+            var MulheresC = 0;
+            var MulheresMaisDe20 = 0;
+             for(var i = 0; i < 5; i++)
+             {
+                Idades = Number(prompt("Digite a Idade"))
+                Sexo = Number(prompt("Digite o Sexo (0 para homens e 1 para mulheres)."))
+                 if(Sexo == 0)
+                 {
+                 HomensC+=1;
+                 MediaHomens+=Idades;
+                 }
+                 if(Sexo == 1)
+                 {
+                    MulheresC+=1;
+                 }
+                 if(Sexo == 1 && Idades > 20){
+
+                    MulheresMaisDe20+=1;
+                 }
+                 MediaGrupo+=Idades;
+
+
+
+                
+          
+            }
+            MediaHomens = MediaHomens / HomensC;
+            MediaGrupo = MediaGrupo / 5;
+            console.log(`O total de Homens cadastrados foram ${HomensC} , o total de mulheres cadastradas foram ${MulheresC} , a media do grupo é de ${MediaGrupo} , a media da idade dos homens é de ${MediaHomens} e o total de mulheres com mais de 20 anos é de ${MulheresMaisDe20}`)
+        
+        }
+    </script>
+    </body>
+</html>

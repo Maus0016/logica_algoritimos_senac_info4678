@@ -9,26 +9,25 @@
 
 <script>
         window.onload = function(){
-            var Numero = Number;
-            var maior = 0;
-            var menor = 0;
+            var maior = null;
+            var menor = null;
             for(var i = 0; i < 8; i++)
             {
                 var precos = Number(prompt("Digite o preço"))
-                Numero = Numero + i + " " + precos; 
-                
-                if(maior > menor)
+                             
+                if(precos > maior || maior == null)
                 {
-                    maior+=1;
+                    maior = precos;
                 }
-                if(menor < maior)
+                if(precos < menor ||  menor == null)
                 {
-                    manor+=1;
+                    menor = precos;
 
                 }
-                console.log(`O maior preço foi ${maior.toFixed(2)} e o menor preço foi ${menor.toFixed(2)}`)
+               
             }
-        }
+            console.log(`O maior preço foi ${maior.toFixed(2)} e o menor preço foi ${menor.toFixed(2)}`);
+        } 
     </script>
     </body>
 </html>
