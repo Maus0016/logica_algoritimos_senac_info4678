@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trigésimo Oitavo</title>
+</head>
+<button onclick="Eu"> Clique Aqui</button>
+
+<script>
+    window.onload = function()
+    {
+        //Arrai sempre começa com 0, se houver 3 arrai ( 0 , 1 ,2 )
+        var arraiDeNomes = ["João", "Nairo", "Pedro"];
+
+        for(var i = 0; i < arraiDeNomes.length; i++)
+        {
+            arraiDeNomes[i] = "Nome Igual " + i;
+            
+
+        }
+        console.log(arraiDeNomes);
+
+    }
+
+
+      //  var numerico = 53;
+       // var texto = "Relampago Marquinhos";
+       // var isCarro = true;
+
+        //var valorDigitado = null;
+    //}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      //  var soma = 0;
+        //var i = 0;
+        //while(i == 0)
+        //{
+        //var valorDigitado = Number(prompt("Digite um valor"))
+        //if(valorDigitado != 1111)
+        //{
+          //  soma += valorDigitado;
+        //}else{
+         ////   i = 1;
+        //}
+        
+     //   }
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       // var Soma = 0;
+       //for(var i = 0; i <1; i++)
+        //{
+          //  var valorDigitado = Number(prompt("Digite um valor"))
+            //if(valorDigitado != 1111)
+            //{
+              //  soma+= valorDigitado;
+               // i--;
+            //}
+    //    }
+    //}
+</script>
