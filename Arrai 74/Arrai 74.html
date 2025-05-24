@@ -9,13 +9,28 @@
 
 <script>
     window.onload = function(){
-        var arraiDeNumeros = [];
+        // var arraiDeNumeros = [];
 
-        for(var i = 0; i < 10; i+=arraiDeNumeros){
-            arraiDeNumeros[i];
-            arraiDeNumeros.push(5 , 3);
+        // for(var i = 0; i < 10; i++){
+        //     if(i % 2 === 0){
+        //         arraiDeNumeros.push(5);
+        //     }else{
+        //         arraiDeNumeros.push(3);
+        //     }
+        // }
+
+        // console.log(arraiDeNumeros);
+        var arraiDeNumeros = [];
+        var valor = 5;
+        for(var i = 0; i < 10; i++){
+            arraiDeNumeros.push(valor);
+            if(valor == 5){
+                valor = 3; 
+            }else{
+                valor = 5;
+            }
         }
-        console.log(arraiDeNumeros)
-        
+
+        console.log(arraiDeNumeros);
     }
 </script>
