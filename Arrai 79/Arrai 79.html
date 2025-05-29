@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 71</title>
+</head>
+<button onclick="Eu"> Clique Aqui</button>
+
+<script>
+    window.onload = function(){
+        var arraiNumerico = [];
+        var par = [];
+        var ExiberPar = [];
+        for(var i = 0; i < 10; i++)
+    {
+        var Numeros = prompt(`Digite o ${i + 1}° numero`);
+        arraiNumerico[i] = Numeros;
+        if(Numeros % 2 == 0)
+    {
+        par.push(i);
+        ExiberPar.push(Numeros);
+       
+    }
+    }
+    console.log(arraiNumerico);
+    console.log(par);
+    console.log(ExiberPar);
+    }
+        
+    
+</script>

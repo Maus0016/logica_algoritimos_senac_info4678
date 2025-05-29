@@ -10,26 +10,28 @@
 <script>
 window.onload = function(){
     var arraiDeNNumeros = [];
+    var ArraiMultiplo = [];
+
 
     for(var i = 0; i < 15; i++)
     {
-        arraiDeNNumeros.push(i);
+        
+        var Valores = prompt(`Digite o ${i + 1}° numero`)
+          arraiDeNNumeros[i] = Valores;
+       
+
+        if(Valores % 10 == 0)
+    {
+      ArraiMultiplo.push(i); 
+
+
     }
-    var ArraiMultiplode10 = [];
-    
-    
-
-
-
-
-    
-    
-    
-     
-    
-
-
-    
-    console.log(arraiDeNNumeros);
 }
+
+        console.log(arraiDeNNumeros);
+        console.log(ArraiMultiplo);
+     
+}
+
 </script>
+</html>
