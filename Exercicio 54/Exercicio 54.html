@@ -17,8 +17,25 @@
          for(var i = 0; i < 7; i++)
          {
             var Peso = Number(prompt ("Informe seu Peso"))
-            var Altura = Number(prompt("Informe seu Peso"))
+            var Altura = Number(prompt("Informe sua Altura"))
+            
+            MediaDeAltura = MediaDeAltura + Altura;
+            if(Peso > 89)
+            {
+                MaisDe90kg+=1
+            }
+            if(Peso < 50 && Altura <= 1.60)
+            {
+                MenosDe50Kg_menos160cm +=1
+            }
+            if(Altura > 1.90 && Peso > 100)
+            {
+                MedemMaisDe190cm_maisDe100Kg +=1
+            }
          }
+         MediaDeAltura = MediaDeAltura / 7;
+
+         console.log(`A Media da altura do grupo é de ${MediaDeAltura} cm. O total de pessoas que pesam mais de 90kg são ${MaisDe90kg}. O numero de pessoas que pesam menos de 50 kg e tem menos de 1.60cm são ${MenosDe50Kg_menos160cm} e o total de pessoas que medem mais de 1.90cm. e mais de 100kg são ${MedemMaisDe190cm_maisDe100Kg}.`);
 
 
 
