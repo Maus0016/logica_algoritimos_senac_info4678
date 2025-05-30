@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trigésimo Oitavo</title>
+</head>
+<button onclick="Eu"> Clique Aqui</button>
+
+<script>
+    window.onload = function()
+    {
+       var  NumeroAleatorio = Number(Math.trunc(Math.random) * 11);
+        for(i = 0; i < 4; i++){
+        var Numero = Number(prompt("Digite seu numero aqui"));
+        if(Numero == NumeroAleatorio){
+            alert("Parabens, você acertou!")
+        }
+        else
+        {
+            alert("Infelizmente você errou!");
+        }
+    }}
+
+</script>
+</body>    
+</html>
+
