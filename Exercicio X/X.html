@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 71</title>
+</head>
+<button onclick="Eu"> Clique Aqui</button>
+
+<script>
+    window.onload = function(){
+        var arraiDeNumeros = [];
+        for(var i = 0; i <= 15; i++){
+            var valorAleatorio = Math.floor(Math.random) * 16;
+            arraiDeNumeros.push(valorAleatorio);
+        }
+        console.log(arraiDeNumeros);
+        for(var pos = 1; pos < arraiDeNumeros.length; pos++){
+            if(arraiDeNumeros[pos] < arraiDeNumeros[pos-1]){
+                for(var posi = pos; posi > 0; posi--){
+                    if(arraiDeNumeros[posi] < arraiDeNumeros[posi-1]){
+                        var aux = arraiDeNumeros[posi];
+                        arraiDeNumeros[posi] = arraiDeNumeros[posi-1];
+                        arraiDeNumeros[posi-1] = aux;
+                    }else{
+                        break;
+                    }
+                }
+            }
+        }
+
+    }
+</script>
